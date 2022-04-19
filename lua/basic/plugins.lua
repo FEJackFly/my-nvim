@@ -107,35 +107,21 @@ packer.startup(
         end
       }
 
-      -- -- 显示网页色
-      -- use {
-      --   "norcalli/nvim-colorizer.lua",
-      --   config = function()
-      --     require("colorizer").setup()
-      --   end
-      -- }
+      -- 显示网页色
+      use {
+        "norcalli/nvim-colorizer.lua",
+        config = function()
+          require("colorizer").setup()
+        end
+      }
 
-      -- -- 内置终端
-      -- use {
-      --   "akinsho/toggleterm.nvim",
-      --   config = function()
-      --       require("conf.toggleterm")
-      --   end
-      -- }
-
-      -- -- 语法高亮
-      -- use {
-      --   "nvim-treesitter/nvim-treesitter",
-      --   run = {":TSupdate"},
-      --   requires = {
-      --       "p00f/nvim-ts-rainbow" -- 彩虹括号
-      --   },
-      --   config = function()
-      --       require("conf.nvim-treesitter")
-      --   end
-      -- }
-
-
+      -- 内置终端
+      use {
+        "akinsho/toggleterm.nvim",
+        config = function()
+            require("conf.toggleterm")
+        end
+      }
      end,
     -- 使用浮动窗口
     config = {
