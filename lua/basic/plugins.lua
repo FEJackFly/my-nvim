@@ -107,14 +107,21 @@ packer.startup(
         end
       }
 
-
-      -- 内置终端
+      -- 显示网页色
       use {
-        "akinsho/toggleterm.nvim",
+        "norcalli/nvim-colorizer.lua",
         config = function()
-            require("conf.toggleterm")
+          require("colorizer").setup()
         end
       }
+
+      -- -- 内置终端
+      -- use {
+      --   "akinsho/toggleterm.nvim",
+      --   config = function()
+      --       require("conf.toggleterm")
+      --   end
+      -- }
 
       -- 语法高亮
       use {
