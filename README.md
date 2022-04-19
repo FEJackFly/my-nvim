@@ -8,3 +8,27 @@
 -->
 
 # nvim 配置
+
+
+## 全局搜索配置
+
+安装repgrep
+
+ubuntu
+```
+sudo add-apt-repository ppa:x4121/ripgrep
+sudo apt-get update
+sudo apt install ripgrep
+```
+
+mac
+```
+brew install ripgrep
+```
+
+安装 fd
+
+```
+npm install -g fd-find
+
+```

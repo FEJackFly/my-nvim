@@ -55,7 +55,11 @@ vim.keybinds.gmap("n", "<C-d>", "10j", vim.keybinds.opts)
 -- vim.keybinds.gmap("i", "<A-h>", "<left>", vim.keybinds.opts)
 -- vim.keybinds.gmap("i", "<A-l>", "<right>", vim.keybinds.opts)
 
-
+-- Telescope
+-- 查找文件
+vim.keybinds.gmap("n", "<C-p>", ":Telescope find_files<CR>", vim.keybinds.opts)
+-- 全局搜索
+vim.keybinds.gmap("n", "<C-f>", ":Telescope live_grep<CR>", vim.keybinds.opts)
 
 -- 正常模式下按 ESC 取消高亮显示
 vim.keybinds.gmap("n", "<ESC>", ":nohlsearch<CR>", vim.keybinds.opts)

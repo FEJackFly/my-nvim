@@ -122,6 +122,13 @@ packer.startup(
             require("conf.toggleterm")
         end
       }
+
+      -- telescope （新增）
+      use { 'nvim-telescope/telescope.nvim', requires = { "nvim-lua/plenary.nvim" } }
+
+      -- dashboard-nvim (新增)
+      use("glepnir/dashboard-nvim")
+
      end,
     -- 使用浮动窗口
     config = {
